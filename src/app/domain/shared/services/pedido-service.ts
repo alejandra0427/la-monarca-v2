@@ -25,7 +25,7 @@ type CrearPedidoPayload = {
 export class PedidoService {
   
   private http = inject(HttpClient);
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://monarcaweb.onrender.com/';
   
 
   crearPedido(data: CrearPedidoPayload) {

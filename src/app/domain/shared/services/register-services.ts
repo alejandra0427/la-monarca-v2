@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class RegisterServices {
 
   private http = inject(HttpClient);
-  private url = 'http://localhost:3000/usuarios';
+  private url = 'https://monarcaweb.onrender.com/usuarios';
   
 
   register(data: {nombresyapellidos:string; cedula: string; email: string; telefono: string; ciudad: string; direccion:string; password:string}){

@@ -15,7 +15,7 @@ export class ProductServices {
     
   getProducts(category_id?: string){
 
-      const url = new URL('http://localhost:3000/productos');
+      const url = new URL('https://monarcaweb.onrender.com/productos');
 
   
       if(category_id){

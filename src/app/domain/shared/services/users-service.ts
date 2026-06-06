@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class UserService {
   private http = inject(HttpClient);
-  private url = 'http://localhost:3000/usuarios';
+  private url = 'https://monarcaweb.onrender.com/usuarios';
 
   // Obtenemos los datos de UN solo usuario filtrando por ID
   getUsuarioById(id: number): Observable<UserModel | undefined> {

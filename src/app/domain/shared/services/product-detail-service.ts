@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductDetailService {
   private http = inject(HttpClient);
-  private apiUrl ='http://localhost:3000/producto';
+  private apiUrl ='https://monarcaweb.onrender.com/producto';
 
   getProductById(id: string): Observable<productModel>{
     return this.http.get<productModel>(`${this.apiUrl}/${id}`);

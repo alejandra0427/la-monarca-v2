@@ -10,7 +10,7 @@ export class CarService {
 
   private http = inject(HttpClient);
   private loginService = inject(LoginService);
-  private url = 'http://localhost:3000/carro';
+  private url = 'https://monarcaweb.onrender.com/carro';
 
   hideSideMenu = signal(true);
   cart = signal<any[]>([]);
